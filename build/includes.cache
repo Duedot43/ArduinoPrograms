@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/variants/standard"
+  },
+  {
+    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/thing.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

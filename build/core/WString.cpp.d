@@ -1,0 +1,3 @@
+/home/syntax/Programs/ArduinoPrograms/build/core/WString.cpp.o: \
+ /home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/WString.cpp \
+ /home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/WString.h
