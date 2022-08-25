@@ -15,7 +15,7 @@ void shortLED() {
 }
 
 void runLED(int morseArray[]) {
-    for (int i=0;i<24;i++) {
+    for (int i=0;i<34;i++) {
         if (morseArray[i] == 1) {
             longLED();
         }
