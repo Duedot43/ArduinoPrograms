@@ -1,5 +1,5 @@
 {
-    "sketch": "C++/Unit 1/pineapple.ino",
+    "sketch": "C++/buzzer/buzzer.ino",
     "output": "build",
     "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",
