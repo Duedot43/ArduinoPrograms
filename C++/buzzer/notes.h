@@ -17,7 +17,7 @@
  * the Arduino.
  * 
  ***************************************************************/
-#define beatLength 200  // # of milliseconds per beat
+#define beatLength 275  // # of milliseconds per beat
 
 // Define the length of each note
 #define WN   beatLength*4  // ...a whole note...

@@ -1,5 +1,5 @@
 {
-    "sketch": "C++/buzzer/buzzer.ino",
+    "sketch": "C++/buzzer/merio2.ino",
     "output": "build",
     "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",
