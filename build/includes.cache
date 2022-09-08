@@ -10,7 +10,57 @@
     "Includepath": "/home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/variants/standard"
   },
   {
-    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/merio2.ino.cpp",
+    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/calibrate.ino.cpp",
+    "Include": "RedBot.h",
+    "Includepath": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src"
+  },
+  {
+    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/calibrate.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBot.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotAccel.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotBumper.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotButton.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotEncoder.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotMotors.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotRadio.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotSensor.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src/RedBotSoftwareSerial.cpp",
     "Include": "",
     "Includepath": null
   }

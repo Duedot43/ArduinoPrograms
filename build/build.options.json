@@ -1,5 +1,5 @@
 {
-  "additionalFiles": "..",
+  "additionalFiles": "",
   "builtInLibrariesFolders": "",
   "builtInToolsFolders": "/usr/share/arduino/tools-builder,/home/syntax/.arduino15/packages",
   "compiler.optimization_flags": "",
@@ -8,5 +8,5 @@
   "hardwareFolders": "/usr/share/arduino/hardware,/home/syntax/.arduino15/packages",
   "otherLibrariesFolders": "/home/syntax/Arduino/libraries",
   "runtime.ide.version": "10819",
-  "sketchLocation": "/home/syntax/Programs/ArduinoPrograms/C++/buzzer/merio2.ino"
+  "sketchLocation": "/home/syntax/Programs/ArduinoPrograms/C++/driveForward/calibrate.ino"
 }

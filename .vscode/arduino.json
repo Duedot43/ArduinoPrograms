@@ -1,5 +1,5 @@
 {
-    "sketch": "C++/buzzer/merio2.ino",
+    "sketch": "C++/driveForward/calibrate.ino",
     "output": "build",
     "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",
