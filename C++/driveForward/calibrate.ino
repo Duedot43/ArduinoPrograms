@@ -13,9 +13,11 @@ void setup() {
 }
 void loop() {
     if (digitalRead(12) == LOW) {
-        motors.rightMotor(190);
-        motors.leftMotor(200);
-        delay(8000);
+        delay(300);
+        motors.rightMotor(200);
+        motors.leftMotor(189);
+        delay(460);
         motors.stop();
+        motors.brake();
     }
 }
