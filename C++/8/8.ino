@@ -1,13 +1,12 @@
-# 1 "/home/syntax/Programs/ArduinoPrograms/C++/8/8.ino"
-# 2 "/home/syntax/Programs/ArduinoPrograms/C++/8/8.ino" 2
+#include <RedBot.h>
 RedBotMotors motors;
 
 RedBotEncoder encoder = RedBotEncoder(A2, 10);
 int buttonPin = 12;
 int countsPerRev = 192; // 4 pairs of N-S x 48:1 gearbox = 192 ticks per wheel rev
 
-float wheelDiam = 2.56; // diam = 65mm / 25.4 mm/in
-float wheelCirc = 3.1415926535897932384626433832795 * wheelDiam; // Redbot wheel circumference = pi*D
+float wheelDiam = 2.56;           // diam = 65mm / 25.4 mm/in
+float wheelCirc = PI * wheelDiam; // Redbot wheel circumference = pi*D
 
 void driveForward(float distance, int motorPower)
 {
@@ -28,7 +27,7 @@ void driveForward(float distance, int motorPower)
     // variable used to offset motor power on right vs left to keep straight.
     int offset = 2; // offset amount to compensate Right vs. Left drive
 
-    numRev = distance / wheelCirc; // calculate the target # of rotations
+    numRev = distance / wheelCirc;       // calculate the target # of rotations
     targetCount = numRev * countsPerRev; // calculate the target count
 
     // debug
@@ -44,13 +43,13 @@ void driveForward(float distance, int motorPower)
     Serial.println();
 
     // print out header
-    Serial.print("Left\t"); // "Left" and tab
+    Serial.print("Left\t");  // "Left" and tab
     Serial.print("Right\t"); // "Right" and tab
     Serial.println("Target count");
     Serial.println("============================");
 
     encoder.clearEnc(BOTH); // clear the encoder count
-    delay(100); // short delay before starting the motors.
+    delay(100);             // short delay before starting the motors.
 
     motors.drive(motorPower); // start motors
 
@@ -97,11 +96,11 @@ void driveForward(float distance, int motorPower)
 
 void setup() {
     Serial.begin(9600);
-    pinMode(buttonPin, 0x2);
+    pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop() {
-    if (digitalRead(buttonPin) == 0x0)
+    if (digitalRead(buttonPin) == LOW)
     {
         driveForward(30, 200);
         motors.leftMotor(-90);
@@ -114,3 +113,4 @@ void loop() {
         driveForward(25, 200);
     }
 }
+
