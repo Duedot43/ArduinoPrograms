@@ -10,12 +10,12 @@
     "Includepath": "/home/syntax/.arduino15/packages/arduino/hardware/avr/1.8.5/variants/standard"
   },
   {
-    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/8.ino.cpp",
+    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/maze.ino.cpp",
     "Include": "RedBot.h",
     "Includepath": "/home/syntax/Arduino/libraries/SparkFun_RedBot_Library/src"
   },
   {
-    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/8.ino.cpp",
+    "Sourcefile": "/home/syntax/Programs/ArduinoPrograms/build/sketch/maze.ino.cpp",
     "Include": "",
     "Includepath": null
   },
