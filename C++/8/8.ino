@@ -104,11 +104,11 @@ void loop() {
     {
         driveForward(30, 200);
         motors.leftMotor(-90);
-        delay(1100);
+        delay(1150);
         motors.stop();
         driveForward(55, 200);
-        motors.rightMotor(80);
-        delay(1150);
+        motors.rightMotor(90);
+        delay(1100);
         motors.stop();
         driveForward(25, 200);
     }
