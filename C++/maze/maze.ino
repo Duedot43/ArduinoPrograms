@@ -26,10 +26,21 @@ void loop()
         for example:*/
         driveStraight(100, 100);
         turnRight(87);
-        driveStraight(30, 100);
+        driveStraight(20, 100);
         turnLeft(45);
         driveStraight(20, 100);
-        motors.stop();
+        turnRight(80);
+        driveStraight(30, 100);
+        turnRight(90);
+        driveStraight(35, 100);
+        turnLeft(90);
+        driveStraight(20, 100);
+        turnRight(45);
+        driveStraight(20, 100);
+        turnRight(90);
+        driveStraight(20, 100);
+        turnLeft(90);
+        driveStraight(30, 100);
     }
 }
 
