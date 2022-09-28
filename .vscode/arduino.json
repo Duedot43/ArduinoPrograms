@@ -1,5 +1,5 @@
 {
-    "sketch": "C++/maze/maze.ino",
+    "sketch": "C++/bumper/bump.ino",
     "output": "build",
     "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",
