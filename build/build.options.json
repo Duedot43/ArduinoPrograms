@@ -8,5 +8,5 @@
   "hardwareFolders": "/usr/share/arduino/hardware,/home/syntax/.arduino15/packages",
   "otherLibrariesFolders": "/home/syntax/Arduino/libraries",
   "runtime.ide.version": "10819",
-  "sketchLocation": "/home/syntax/Programs/ArduinoPrograms/C++/bumper/bump.ino"
+  "sketchLocation": "/home/syntax/Programs/ArduinoPrograms/C++/ultra/sonic.ino"
 }

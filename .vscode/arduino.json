@@ -1,5 +1,5 @@
 {
-    "sketch": "C++/bumper/bump.ino",
+    "sketch": "C++/ultra/sonic.ino",
     "output": "build",
     "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",

@@ -1,7 +1,6 @@
-# 1 "/home/syntax/Programs/ArduinoPrograms/C++/ultra/sonic.ino"
 // NewPing - Version: 1.9.1
-# 3 "/home/syntax/Programs/ArduinoPrograms/C++/ultra/sonic.ino" 2
-# 4 "/home/syntax/Programs/ArduinoPrograms/C++/ultra/sonic.ino" 2
+#include <NewPing.h>
+#include <RedBot.h>
 // Arduino pin tied to trigger pin on the ultrasonic sensor.
 // Arduino pin tied to echo pin on the ultrasonic sensor.
 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
@@ -17,12 +16,12 @@ void setup() {
 void loop() {
   motors.leftMotor(analogRead(A6));
   motors.rightMotor(analogRead(A6));
-  delay(50); // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
+  delay(50);                      // Wait 50ms between pings (about 20 pings/sec). 29ms should be the shortest delay between pings.
   unsigned int uSL = sonarL.ping();
   unsigned int uSR = sonarR.ping();
-
+  
   int lDistance = sonarL.convert_cm(uSL);
-  int rDistance = sonarR.convert_cm(uSR);
+  int rDistance = sonarR.convert_cm(uSR); 
   // Send ping, get ping time in microseconds (uS).
   Serial.print("Left Side: ");
   Serial.print(lDistance); // Convert ping time to distance and print result (0 = outside set distance range, no ping echo)
@@ -32,14 +31,14 @@ void loop() {
   Serial.println( rDistance);
 
 
-if( lDistance <= 20 && lDistance > 0 )
+if( lDistance <= 20   &&  lDistance > 0 )
 {
   motors.stop();
   turnLeft();
 //Stop and turn right
 }
 
-if( rDistance <= 20 && rDistance > 0 )
+if( rDistance <= 20  &&  rDistance > 0 )
 {
   motors.stop();
   turnRight();
@@ -49,22 +48,22 @@ if( rDistance <= 20 && rDistance > 0 )
 
 }
 
-
+  
 void turnRight()
 {
-  motors.leftMotor(-150); // spin CCW
+  motors.leftMotor(-150);  // spin CCW
   motors.rightMotor(155); // spin CCW
   delay(analogRead(A7));
   motors.brake();
-  delay(100); // short delay to let robot fully stop
+  delay(100);  // short delay to let robot fully stop
 }
 
 // turnRight() function -- turns RedBot to the Left
 void turnLeft()
 {
-  motors.leftMotor(150); // spin CW
+  motors.leftMotor(150);  // spin CW
   motors.rightMotor(-155); // spin CW
   delay(analogRead(A7));
   motors.brake();
-  delay(100); // short delay to let robot fully stop
+  delay(100);  // short delay to let robot fully stop
 }
