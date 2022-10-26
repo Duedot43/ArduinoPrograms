@@ -34,14 +34,16 @@ void loop() {
 if( lDistance <= map(analogRead(A4), 0, 1023, 0, 300)   &&  lDistance > 0 )
 {
   motors.stop();
-  turnRight(A7);
+  reverse(A7);
+  turnLeft(A7);
 //Stop and turn right
 }
 
 if( rDistance <= map(analogRead(A4), 0, 1023, 0, 300)  &&  rDistance > 0 )
 {
   motors.stop();
-  turnLeft(A7);
+  reverse(A7);
+  turnRight(A7);
 //Stop and turn left
 }
 

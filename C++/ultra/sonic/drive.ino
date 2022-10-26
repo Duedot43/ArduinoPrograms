@@ -22,3 +22,12 @@ void turnLeft(int varPin)
     motors.brake();
     delay(100);  // short delay to let robot fully stop
 }
+
+void reverse(int varPin) {
+  motors.stop();
+  motors.leftMotor(-150);  // spin CW
+  motors.rightMotor(-155); // spin CW
+  delay(analogRead(varPin));
+  motors.brake();
+  delay(100);  // short delay to let robot fully stop
+}
